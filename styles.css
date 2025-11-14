@@ -1,0 +1,59 @@
+/* 1. Body and Centering */
+body {
+    /* Full viewport height for vertical centering */
+    min-height: 100vh; 
+    
+    /* Flexbox for centering the container */
+    display: flex;
+    justify-content: center; /* Center container horizontally */
+    align-items: center; /* Center container vertically */
+    
+    /* Minimal styling */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* 2. Button Container - **THIS IS THE KEY CHANGE** */
+.button-container {
+    /* Stack buttons vertically */
+    display: flex;
+    flex-direction: column; 
+    
+    /* Center the buttons themselves (since they are now column items) */
+    align-items: center; 
+    
+    /* Space between the buttons */
+    gap: 15px; 
+}
+
+/* 3. Button Styling (The a tag) */
+.button {
+    /* Set a specific width so they align perfectly in the center */
+    width: 200px; 
+    text-align: center;
+    
+    /* Resetting anchor tag styles */
+    text-decoration: none;
+    color: #333; 
+    
+    /* Minimalist button appearance */
+    background-color: #fff; /* White background */
+    padding: 10px 20px; /* Internal spacing */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Slightly rounded corners */
+    
+    /* Text properties */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    
+    /* Smooth transition for hover effect */
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* 4. Hover Effect */
+.button:hover {
+    background-color: #e2e2e2; /* Light gray on hover */
+    border-color: #aaa;
+}
