@@ -1,3 +1,12 @@
+/* 0. Custom Font Definition */
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('font/sf-pro/SF-Pro-Display-Regular.woff2') format('woff2');
+    font-weight: 400; /* Assuming Regular is 400 */
+    font-style: normal;
+    font-display: swap; /* Ensures text loads even if the font is slow */
+}
+
 /* 1. Body and Centering */
 body {
     /* Full viewport height for vertical centering */
@@ -10,7 +19,11 @@ body {
     
     /* Minimal styling */
     margin: 0;
-    font-family: Arial, sans-serif;
+    
+    /* --- KEY CHANGE HERE --- */
+    /* Set SF Pro Display as the primary font */
+    font-family: 'SF Pro Display', Arial, sans-serif; 
+    
     background-color: #f4f4f9;
 }
 
@@ -45,7 +58,7 @@ body {
     
     /* Text properties */
     font-size: 16px;
-    font-weight: bold;
+    font-weight:400;
     cursor: pointer;
     
     /* Smooth transition for hover effect */
